@@ -1,0 +1,1 @@
+# This is a bank of practice programs I've written at one point or another.  I don't remember which does what, and they're poorly documented.  Almost all are mine, but a few probably came from somewhere else and I will make it a project to rectify these things.
