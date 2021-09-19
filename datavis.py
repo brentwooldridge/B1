@@ -1,4 +1,6 @@
-# Import required libraries
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> # Import required libraries
 import pandas as pd
 import dash
 import dash_html_components as html
@@ -127,7 +129,7 @@ app.layout = html.Div(children=[
                                 
                                 # TASK3: Add a division with two empty divisions inside. See above disvision for example.
                                 # Enter your code below. Make sure you have correct formatting.
-                                
+                                html.Div([ ], id='plot41'),
     
                                 html.Div([
                                         html.Div([ ], id='plot4'),
@@ -143,7 +145,7 @@ app.layout = html.Div(children=[
  Output(component_id='plot3', component_property='children'),
  Output(component_id='plot4', component_property='children'),
  Output(component_id='plot5', component_property='children')]
-@app.callback( 
+@app.callback(
                [Input(component_id='input-type', component_property='value'),
                 Input(component_id='input-year', component_property='value')],
                # REVIEW4: Holding output state till user enters all the form information. In this case, it will be chart type and year
