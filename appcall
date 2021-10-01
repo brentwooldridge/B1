@@ -1,0 +1,19 @@
+@app.callback([Output(component_id='success-pie-chart', component_property='figure'),
+                                Input(component_id='site-dropdown', component_property='value')]
+                                [State("plot1", 'children'), State("plot2", "children"),
+                                State("plot3", "children"), State("plot4", "children"),
+                                State("plot5", "children")]
+
+                        )
+def get_pie_chart(entered_site):
+    filtered_df = spacex_df
+    if entered_site == 'ALL':
+        fig = px.pie(data, values='class', 
+        names='pie chart names', 
+        title='title')
+        return fig
+    else:
+        fig = px.pie(data, values='class', 
+        names='pie chart names', 
+        title='title')
+        return fig
